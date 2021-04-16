@@ -9,7 +9,10 @@ const[posts,setPosts] = useState([
 
 useEffect (() =>{
 db.collection('posts').onSnapshot(snapshot => {
-setPosts(snapshot.docs.map(doc => doc.data()));
+setPosts(snapshot.docs.map(doc => ({
+id: doc.id,
+post :doc.data()
+})));
 })
   },[]);
 
@@ -17,12 +20,12 @@ setPosts(snapshot.docs.map(doc => doc.data()));
   return (
     <div className="App">
       <div className="app_header">
-      <img className="app_header_image" src="https://logodix.com/logo/2062567.jpg"></img>
+      <img className="app_header_image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzQ4YYo7FWpeEEdGAWaMKSKClw3qvIM488bw&usqp=CAU"></img>
       </div>
       <h1>Hello world </h1>
       {
-        posts.map(post =>(
-          <Post username= {post.username}id= {post.id} caption={post.caption} imageUrl= {post.imageUrl}/>
+        posts.map(({id,post}) =>(
+          <Post username= {post.username} caption={post.caption} imageUrl= {post.imageUrl}/>
         ))
       }
     </div>

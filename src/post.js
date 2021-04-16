@@ -8,8 +8,8 @@ function Post({username,caption,imageUrl}) {
     <div className="post">
     <div className="post_header">
       <Avatar className="post_avatar"
-        alt=' Ronaldo'
-        src="https://www.gannett-cdn.com/presto/2020/08/25/USAT/842737a0-5b6c-47bc-adbc-ea5bef879661-Messi_gone.jpg"/>
+        alt=' '
+        src=""/>
       <h3>{username}</h3>
       </div>
 
