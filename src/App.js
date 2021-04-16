@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import React,{useState,useEffect} from 'react';
 import './App.css';
+import Post from './post';
+import {db} from './firebase.js';
 
 function App() {
+const[posts,setPosts] = useState([
+  ]);
+
+useEffect (() =>{
+db.collection('posts').onSnapshot(snapshot => {
+setPosts(snapshot.docs.map(doc => doc.data()));
+})
+  },[]);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="app_header">
+      <img className="app_header_image" src="https://logodix.com/logo/2062567.jpg"></img>
+      </div>
+      <h1>Hello world </h1>
+      {
+        posts.map(post =>(
+          <Post username= {post.username}id= {post.id} caption={post.caption} imageUrl= {post.imageUrl}/>
+        ))
+      }
     </div>
+
   );
 }
 
