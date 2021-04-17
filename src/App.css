@@ -5,6 +5,9 @@
 .app{
   background-color: #fafafa;
 }
+.app_header_bar{
+  background-color: white;
+}
 .app_header{
   padding: 10px;
   object-fit: contain;
@@ -13,12 +16,19 @@
 }
 
 .app_header_image{
-  height: 75px;
-  width: 180px;
+  height: 85px;
+  width: 200px;
+  align-items: left;
+  background-color: #fafafa;
+
 }
 
 .app_signup{
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.unique{
+  background-color: #fafafa;
 }
