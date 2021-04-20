@@ -197,18 +197,7 @@ const signIn = (event) => {
            )}
 
             </div>
-            <InstagramEmbed
-              url='https://www.instagram.com/p/B8i2DhXlwW0/'
-              maxWidth={320}
-              hideCaption={false}
-              containerTagName='div'
-              protocol=''
-              injectScript
-              onLoading={() => {}}
-              onSuccess={() => {}}
-              onAfterRender={() => {}}
-              onFailure={() => {}}
-            />
+            
 
 		  </div>
 
