@@ -30,3 +30,27 @@
 .post_text{
   padding: 20px;
 }
+
+.post_commentbox{
+  display: flex;
+  margin-top: 10px;
+}
+
+.post_input{
+  flex: 1;
+  border: none;
+  padding: 10px;
+  border-top: 1px solid lightgray;
+
+}
+
+.post_button{
+  border: none;
+  border-top: 1px solid lightgray;
+  flex:0;
+  background-color: transparent;
+}
+
+.post_comments{
+  padding: 20px;
+}
