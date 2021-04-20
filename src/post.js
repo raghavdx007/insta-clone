@@ -15,7 +15,7 @@ function Post({username,caption,imageUrl}) {
 
      {/*header -> avatar -> username*/}
 
-    <img className= "post_image" src ={imageUrl}></img>
+    <img className= "post_image" alt="post" src ={imageUrl}></img>
      {/*image*/}
      <h4 className="post_text"><strong>{username} </strong>{caption}</h4>
      {/*username + caption*/}

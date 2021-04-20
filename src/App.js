@@ -6,7 +6,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import { Button , Input } from '@material-ui/core'
 import Logo from './assets/images/finstalogo.png';
-
+import ImageUpload from './ImageUpload';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -20,9 +20,6 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function rand() {
-  return Math.round(Math.random() * 20) - 10;
-}
 function getModalStyle() {
   const top = 50;
   const left = 50;
@@ -111,9 +108,16 @@ const signIn = (event) => {
   return (
 
     <div className="App">
+      { user?.displayName ? (
+        <ImageUpload username = {user.displayName} />
+        ): (
+          <h3>Sorry you need to login to upload</h3>
+        )
+      }
+
       <div className="app_header_bar">
         <center>
-           <img className="app_header_image" src={Logo}></img>
+           <img className="app_header_image" alt="logo" src={Logo}></img>
         </center>
      </div>
 	 <div className="unique">
@@ -124,7 +128,7 @@ const signIn = (event) => {
 		   <div style={modalStyle} className={classes.paper}>
 			 <form className= "app_signup">
 				   <center>
-					<img className="app_header_image" src={Logo}></img>
+					<img className="app_header_image" alt="logo"src={Logo}></img>
 					</center>
 
 					<Input
@@ -158,7 +162,7 @@ const signIn = (event) => {
 				   <div style={modalStyle} className={classes.paper}>
 					 <form className= "app_signup">
 						   <center>
-							<img className="app_header_image" src={Logo}></img>
+							<img className="app_header_image"alt="logo" src={Logo}></img>
 							</center>
 
 
