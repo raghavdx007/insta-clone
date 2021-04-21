@@ -8,14 +8,14 @@ import firebase from 'firebase';
 
   function Post({user,postId,username,caption,imageUrl}) {
   const[comments, setComments] = useState([]);
-  const[comment,setComment] = useState('');
+  const[comment,setComment] = useState([]);
 
     useEffect(() => {
     let unsubscribe;
     if (postId) {
       unsubscribe = db
       .collection("posts")
-      .doc("postId")
+      .doc(postId)
       .collection("comments")
       .orderBy('timestamp','desc')
       .onSnapshot((snapshot) => {
