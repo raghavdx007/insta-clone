@@ -45,7 +45,7 @@
 }
 
 .btn2{
-    margin-top: 30px;
+    margin-top: 38px;
     outline:none;
     cursor: pointer;
     margin-bottom:20px;
@@ -62,8 +62,9 @@
 
 }
     .btn3{
-    margin-top: 30px;
-    outline:none;
+    margin-top: 20px;
+    border-bottom: 1px solid red;
+    outline: none;
     cursor: pointer;
     margin-right: 12px;
     background-color: white;
