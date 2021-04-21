@@ -26,7 +26,7 @@ import firebase from 'firebase';
   return () => {
     unsubscribe();
   };
-},[postId]);
+  },[postId]);
 
   const postComment =(event) => {
       event.preventDefault();
@@ -54,9 +54,9 @@ import firebase from 'firebase';
      <h4 className="post_text"><strong>{username} </strong>{caption}</h4>
 
        <div className="post_comments">
-         {comments.map((comment) =>{
+         {comments.map((comment) => (
            <p><strong>{comment.username}</strong>{comment.text}</p>
-         })}
+         ))}
        </div>
 
 

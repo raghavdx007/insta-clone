@@ -7,7 +7,6 @@ import Modal from '@material-ui/core/Modal';
 import { Button , Input } from '@material-ui/core'
 import Logo from './assets/images/finstafinal2.png';
 import ImageUpload from './ImageUpload';
-import InstagramEmbed from 'react-instagram-embed';
 
 
 
@@ -197,7 +196,7 @@ const signIn = (event) => {
            )}
 
             </div>
-            
+
 
 		  </div>
 
