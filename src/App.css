@@ -18,8 +18,10 @@
 }
 
 .app_header{
-
+  position: sticky;
+  top: 0;
   padding: 10px;
+  z-index: 1;
   object-fit: contain;
   background-color: white;
   border-bottom: 1px solid lightgray;
@@ -62,18 +64,14 @@
 
 }
     .btn3{
-    margin-top: 20px;
-    border-bottom: 1px solid red;
     outline: none;
     cursor: pointer;
     margin-right: 12px;
     background-color: white;
-    border-style: inherit;
+    border-style: hidden;
     text-decoration: none;
-    display: inline-block;
-    border-style: inherit;
     color: black;
-    font-size: 15px;
+    font-size: 18px;
     font-family: button, cursive;
 
 }

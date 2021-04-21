@@ -60,23 +60,26 @@ import firebase from 'firebase';
          ))}
        </div>
 
+     {user && (
+       <form className="post_commentbox">
+       <input
+         className="post_input"
+         type = "text"
+         placeholder = "Add a comment ..."
+         value = {comment}
+         onChange = {(e) => setComment(e.target.value)}
+         />
 
-     <form className="post_commentbox">
-     <input
-       className="post_input"
-       type = "text"
-       placeholder = "Add a comment ..."
-       value = {comment}
-       onChange = {(e) => setComment(e.target.value)}
-       />
+       <button
+         className="post_button"
+         disabled = {!comment}
+         type = "submit"
+         onClick={postComment}
+         >Post</button>
+         </form>
+     )}
 
-     <button
-       className="post_button"
-       disabled = {!comment}
-       type = "submit"
-       onClick={postComment}
-       >Post</button>
-       </form>
+
 
       </div>
 
