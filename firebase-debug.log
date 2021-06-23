@@ -1,0 +1,14 @@
+[debug] [2021-06-23T13:52:27.859Z] ----------------------------------------------------------------------
+[debug] [2021-06-23T13:52:27.862Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\asus\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-06-23T13:52:27.862Z] CLI Version:   9.14.0
+[debug] [2021-06-23T13:52:27.862Z] Platform:      win32
+[debug] [2021-06-23T13:52:27.862Z] Node Version:  v14.17.0
+[debug] [2021-06-23T13:52:27.868Z] Time:          Wed Jun 23 2021 19:22:27 GMT+0530 (India Standard Time)
+[debug] [2021-06-23T13:52:27.868Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-23T13:52:27.885Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-23T13:52:27.885Z] > authorizing via signed-in user (raghavdx50@gmail.com)
+[debug] [2021-06-23T13:52:27.886Z] [iam] checking project finstagram-01 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-06-23T13:52:27.887Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-23T13:52:27.887Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
