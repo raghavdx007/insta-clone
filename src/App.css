@@ -1,23 +1,23 @@
-*{
+* {
   margin: 0;
 }
 
-@font-face{
+@font-face {
   font-family: button;
-  src:local('button'),url(./fonts/BebasNeue-Regular.ttf);
+  src: local("button"), url(./fonts/BebasNeue-Regular.ttf);
 }
-.app{
+.app {
   background-color: #fafafa;
 }
-.app_header_bar{
+.app_header_bar {
   background-color: white;
 }
 
-.app_posts{
+.app_posts {
   padding: 20px;
 }
 
-.app_header{
+.app_header {
   position: sticky;
   top: 0;
   padding: 10px;
@@ -30,73 +30,70 @@
   justify-content: space-between;
 }
 
-.btn1{
-      margin-top: 30px;
-      outline:none;
-      cursor: pointer;
-      margin-bottom:20px;
-      margin-right: 12px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      border-style: inherit;
-      background-color: white;
-      color: black;
-      font-size: 18px;
-      font-family: button, cursive;
+.btn1 {
+  margin-top: 30px;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-right: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-style: inherit;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+  font-family: button, cursive;
 }
 
-.btn2{
-    margin-top: 38px;
-    outline:none;
-    cursor: pointer;
-    margin-bottom:20px;
-    margin-right: 12px;
-    background-color: white;
-    border-style: inherit;
-    text-decoration: none;
-    display: inline-block;
-    border-style: inherit;
-    background-color: red;
-    color: white;
-    font-size: 18px;
-    font-family: button, cursive;
-
+.btn2 {
+  margin-top: 38px;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-right: 12px;
+  background-color: white;
+  border-style: inherit;
+  text-decoration: none;
+  display: inline-block;
+  border-style: inherit;
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  font-family: button, cursive;
 }
-    .btn3{
-    outline: none;
-    cursor: pointer;
-    margin-right: 12px;
-    background-color: white;
-    border-style: hidden;
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-family: button, cursive;
-
+.btn3 {
+  outline: none;
+  cursor: pointer;
+  margin-right: 12px;
+  background-color: white;
+  border-style: hidden;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: button, cursive;
 }
 
-.app_posts{
+.app_posts {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.app_header_image{
+.app_header_image {
   height: 100px;
   width: 200px;
   align-items: left;
   object-fit: contain;
-
 }
 
-.app_signup{
+.app_signup {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
 
-.unique{
+.unique {
   background-color: #fafafa;
 }
